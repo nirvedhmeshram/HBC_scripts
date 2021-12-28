@@ -18,7 +18,7 @@ lengths = torch.tensor([[1], [1], [1], [1], [1]])
 
 Later in order so support size of 5000 as is the case in FBGMM benchmark we changed the tensorflow op and the new implementation is hbc_tensorflow_largesize.py
 
-# Here are the introduction to run this script using IREE for cuda (follow the IREE documentation to do the same thing for CPU using dylib)
+# Here are the scripts to run the op using IREE for cuda (follow the IREE documentation to do the same thing for CPU using dylib)
 python hbc_tensorflow_largesize.py # creates the hbc_sm_v2 folder which has the model
 
 python make_mlir_frommodel.py # creates the MLIR in MHLO
