@@ -18,6 +18,8 @@ lengths = torch.tensor([[1], [1], [1], [1], [1]])
 
 Later in order so support size of 5000 as is the case in FBGMM benchmark we changed the tensorflow op and the new implementation is hbc_tensorflow_largesize.py
 
+Lastly, in order to support arbitary segment lengths the cumsum operation was removed outside of the model and into python and a wrapper
+was introduced in hbc_tensorflow_v2.py
 # Here are the scripts to run the op using IREE for cuda (follow the IREE documentation to do the same thing for CPU using dylib)
 python hbc_tensorflow_largesize.py # creates the hbc_sm_v2 folder which has the model
 
