@@ -7,7 +7,7 @@ Here is the pytorch implementation: hbc_torch.py
 The new ops added are
 torch.arange and tensor.unsqueeze 
 
-Here is the tensorflow implementation hbc_tensorflow.py
+Here is the tensorflow implementation: hbc_tensorflow.py
 
 The new ops added are
 tf.range and tf.expand_dims 
