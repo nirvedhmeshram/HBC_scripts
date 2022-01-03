@@ -34,3 +34,5 @@ iree-run-module --driver=cuda --module_file=iree_hbc_cuda.vmfb \
 ~/iree-build-release/iree/tools/iree-benchmark-module --driver=cuda --module_file=iree_hbc_cuda.vmfb \
 --entry_function=__call__ --function_input="5000xi64"=21 --function_input="5000x1xi64=1" --function_input="5000x1xf32"=0.2 #benchmark
 
+# Makefile (for the cumsum kernel)
+change the -arch=sm_37 to the appropriate flag for the GPU you are using then do make
